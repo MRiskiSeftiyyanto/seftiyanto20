@@ -1,0 +1,10 @@
+	LD E,04H
+	LD D,013H
+	XOR A	
+	LD A,B
+	SBC A,D
+	LD L,A
+	LD H,00H
+	LD (0712H),HL
+	HALT
+	.END
